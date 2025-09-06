@@ -1,0 +1,336 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f5f7fa;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background:#06299c;
+  color:#fff;
+  padding:1rem 0;
+}
+
+.container {
+  width:100%;
+  padding:0 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo and title */
+.brand {
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.logo {
+  width:50px;
+  height:50px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.brand h1 {
+  font-size:1.2rem;
+  margin:0;
+}
+
+/* Actions group */
+.actions {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-right:40px; /* 👈 moves Search + Student Life a little left */
+}
+
+
+/* Search button (icon only) */
+.search-btn {
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+.search-btn:hover {
+  color:#5b8cff;
+}
+
+/* Student life button */
+.student-btn {
+  background:#5b8cff;
+  color:#fff;
+  padding:0.6rem 1rem;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+.student-btn:hover {
+  background:#4a72d8;
+}
+
+/* Main navigation */
+.main-nav {
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+
+.main-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap: 6px;rem;   /* 👈 increase spacing between items */
+}
+
+.main-nav a {
+  display:block;
+  padding:1rem 0; /* keeps vertical padding only */
+  color:#01218a;
+  font-weight:600;
+  text-decoration:none;
+}
+
+
+.main-nav a:hover {
+  color:#1294ff;       /* lighter blue on hover */
+}
+/* Main navigation */
+.main-nav {
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+
+.main-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+}
+
+.main-nav a {
+  display:block;
+  padding:1rem;
+  color:#01218a;       /* blue text */
+  font-weight:600;
+  text-decoration:none;
+}
+
+.main-nav a:hover {
+  color:#1294ff;       /* lighter blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills screen, may crop */
+  display: block;
+}
+
+/* Overview Section */
+.overview {
+  background: #0a2a66;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 0 auto 2rem auto;
+  max-width: 1100px;
+}
+.overview h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.overview-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.overview-card {
+  background: #1c3d91;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 180px;
+  flex: 1;
+  max-width: 220px;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.overview-card span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Staff Filter */
+.staff-filter {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+.staff-filter button {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+.staff-filter button:hover {
+  background: #b5b5b5;
+}
+.staff-filter button.active {
+  background: #0a2a66;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Staff Cards */
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  padding: 0 20px;
+}
+.staff-card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: center;
+  transition: transform 0.2s;
+}
+.staff-card:hover {
+  transform: translateY(-5px);
+}
+.staff-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 4px solid #0a2a66;
+}
+.staff-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #0a2a66;
+}
+.staff-info .role {
+  font-size: 0.9rem;
+  color: #444;
+  margin-left: 8px;
+  font-weight: normal;
+}
+.staff-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.staff-info a {
+  color: #0a2a66;
+  text-decoration: none;
+  font-weight: bold;
+}
+.staff-info a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #0b1a78;   /* same dark blue */
+  color: #fff;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Main three-column layout */
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-col p {
+  margin: 0.3rem 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #0b1a78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #00e0d0;
+  color: #0b1a78;
+  transform: scale(1.1);
+}
+
+/* Bottom links */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-bottom a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
