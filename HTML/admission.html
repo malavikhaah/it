@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Department Admission</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/admission.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <!-- Logo + Department name -->
+      <div class="brand">
+        <img src="/IMAGES/logo.jpg" alt="IT Logo" class="logo">
+        <h1>Department of Information Technology</h1>
+      </div>
+
+      <!-- Search icon + Student Life -->
+      <div class="actions">
+        <button class="search-btn"><i class="fa fa-search"></i></button>
+        <a href="#" class="student-btn">Student Life</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/HTML/about.html">About</a></li>
+      <li><a href="/HTML/program.html">Programs</a></li>
+      <li><a href="/HTML/admission.html">Admission</a></li>
+      <li><a href="/HTML/contact.html">Contact</a></li>
+      <li><a href="/HTML/alumini.html">Alumni</a></li>
+      <li><a href="/HTML/studentlife.html">Student Life</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- Admission Section -->
+  <section id="admission" class="admission-banner">
+    <h2 class="admission-heading">Admission</h2>
+    <div class="admission-img-container">
+      <img src="/IMAGES/admission.jpg" alt="Admission Students" class="admission-img">
+      <div class="admission-text">
+        <p>
+          The IT Department at Government Engineering College Idukki provides quality technical education
+          and practical training to meet the growing demands of the IT industry. Our programs ensure that
+          graduates gain the knowledge and skills required to succeed in software development, data science,
+          cybersecurity, and other emerging fields.
+        </p>
+        <a href="#apply" class="admission-btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Layout -->
+  <div class="content-layout">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admissions</h2>
+      <a href="#eligibility">Eligibility Criteria</a>
+      <a href="#application">Application Process</a>
+      <a href="#programs">Programs Offered</a>
+      <a href="#dates">Important Dates</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Terms at a glance</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="btech">B.Tech Admission</button>
+        <button class="tab-btn" data-tab="mtech">M.Tech Admission</button>
+      </div>
+
+      <!-- B.Tech Content -->
+      <div class="tab-content" id="btech">
+        <h2>B.Tech - IT Department</h2>
+        <div class="dates">
+          <div><strong>25 - 28 July 2025</strong> KEAM Round 2 Option Entry</div>
+          <div><strong>29 July 2025</strong> Professional Seat Allotment (Round 2)</div>
+          <div><strong>30 July 2025</strong> Final Seat Allotment (Round 2)</div>
+          <div><strong>31 July - 4 August 2025</strong> Join College by Paying Fees</div>
+          <div><strong>5 August 2025</strong> KEAM Round 3 Choice Filling</div>
+        </div>
+        <p class="note">
+          *Most programs will start on the date listed above but there are some exceptions.
+          If your program starts on a different date, your tuition payment deadline will be four weeks before the start
+          of classes.
+        </p>
+        <a href="#dates" class="btn">Important Dates</a>
+      </div>
+
+      <!-- M.Tech Content -->
+      <div class="tab-content" id="mtech" style="display:none;">
+        <h2>M.Tech - IT Department</h2>
+        <div class="dates">
+          <div><strong>10 - 14 August 2025</strong> Option Entry</div>
+          <div><strong>16 August 2025</strong> Seat Allotment (Round 1)</div>
+          <div><strong>20 August 2025</strong> College Reporting</div>
+          <div><strong>25 August 2025</strong> Classes Begin</div>
+        </div>
+        <p class="note">
+          *All M.Tech programs follow AICTE admission guidelines. Ensure you submit valid GATE scores.
+        </p>
+        <a href="#dates" class="btn">Important Dates</a>
+      </div>
+    </div>
+
+    <!-- Admission Form Section -->
+    <div class="admission-form-section" id="form">
+      <h2>ADMISSION FORM</h2>
+      <div class="icon">
+        <img src="/IMAGES/form.png" alt="Form Icon">
+      </div>
+      <p>
+        The IT Department at Government Engineering College Idukki provides quality technical education and practical
+        training to meet the growing demands of the IT industry. Our programs ensure that graduates gain the knowledge
+        and skills required to succeed in software development, data science, cybersecurity, and other emerging fields.
+      </p>
+      <a href="https://example.com/form" class="form-btn">FOR THE FORM CLICK HERE</a>
+    </div>
+  </div>
+
+  <!-- Admission Form Cards -->
+  <section class="cards-section">
+    <div class="card">
+      <div class="icon"><img src="/IMAGES/list.png" alt="List Icon"></div>
+      <h3>How to Apply</h3>
+      <p>Follow our step-by-step checklist to complete your application process successfully.</p>
+      <a href="#">Get the checklist</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><img src="/IMAGES/laptop.png" alt="Laptop Icon"></div>
+      <h3>Entrance Requirements</h3>
+      <p>Review academic and eligibility requirements for admission into our programs.</p>
+      <a href="#">View requirements</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><img src="/IMAGES/calendar.png" alt="Calendar Icon"></div>
+      <h3>Important Dates</h3>
+      <p>Stay updated with application deadlines, counseling dates, and reporting schedules.</p>
+      <a href="#">Find your dates</a>
+    </div>
+  </section>
+  <!-- Academic Calendar Section -->
+  <section id="academic-calendar" class="academic-calendar">
+    <h2>ACADEMIC CALENDAR</h2>
+    <p>
+      The academic calendar outlines important dates for each semester, including the
+      commencement of classes, examinations, holidays, and other key academic activities.
+      Students of the IT Department at Government Engineering College Idukki are advised to
+      follow the calendar closely to stay updated on deadlines and schedules.
+    </p>
+    <p>
+      <strong>Academic Calendar 2025</strong><br>
+      Stay informed about semester start dates, exams, and holidays for the IT Department at GEC Idukki.
+    </p>
+
+    <!-- Notice Image -->
+    <div class="calendar-image">
+      <img src="/IMAGES/academicnotice.png" alt="Academic Calendar Notice">
+    </div>
+
+    <!-- Optional Download Button -->
+    <a href="/PDF/academic_calender.pdf" target="_blank" class="download-btn">📄 Download PDF</a>
+
+    <!-- Scholarship Section -->
+    <section id="scholarship" class="scholarship">
+      <h2>SCHOLARSHIP AND FINANCIAL ASSISTANCE</h2>
+
+      <div class="scholarship-grid">
+        <!-- Merit Scholarship -->
+        <div class="scholarship-card">
+          <img src="/IMAGES/merit.png" alt="Merit Scholarship">
+          <h3>Merit Scholarships</h3>
+          <p>
+            Students with outstanding academic performance in the IT Department are eligible
+            for university or government merit scholarships that recognize excellence.
+          </p>
+        </div>
+
+        <!-- Government Scholarship -->
+        <div class="scholarship-card">
+          <img src="/IMAGES/governmentt.png" alt="Government Scholarship">
+          <h3>Government Scholarship</h3>
+          <p>
+            Various scholarships are available through the Government of Kerala and Government
+            of India, including those for socially and economically disadvantaged students
+            (such as SC/ST, OBC, and minority scholarships).
+          </p>
+        </div>
+
+        <!-- Financial Assistance -->
+        <div class="scholarship-card">
+          <img src="/IMAGES/assistance.png" alt="Financial Assistance">
+          <h3>Financial Assistance Programs</h3>
+          <p>
+            Various scholarships are available through the Government of Kerala and Government
+            of India, including those for socially and economically disadvantaged students
+            (such as SC/ST, OBC, and minority scholarships).
+          </p>
+        </div>
+
+        <!-- National/State Level -->
+        <div class="scholarship-card">
+          <img src="/IMAGES/national.png" alt="National and State Schemes">
+          <h3>National and State Level Schemes</h3>
+          <p>
+            Students can apply for programs like E-Grantz (Kerala Government),
+            Central Sector Scheme of Scholarships (CSSS), and other MHRD-funded aids.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <p class="learn-more">
+        To learn more about scholarship and support
+        <a href="#" class="btn">Click Here</a>
+      </p>
+    </section>
+  </section>
+<footer class="footer">
+  <div class="footer-main">
+    
+    <!-- Left: College Info + Map -->
+    <div class="footer-col">
+      <h4>Government Engineering College<br>Idukki</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.9936738399624!2d76.93745557484372!3d9.850896890247046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07ba40109a481f%3A0x68b6eed84716c7ce!2sGovernment%20Engineering%20College%20Idukki!5e0!3m2!1sen!2sin!4v1756575174658!5m2!1sen!2sin" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Middle: Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>📞 HOD: +91 9400006409</p>
+      <p>☎ Office: 0481 2507763</p>
+      <p>📠 Fax: 0481 2506153</p>
+      <p>📧 Email: info@geci.ac.in</p>
+    </div>
+
+    <!-- Right: Social -->
+    <div class="footer-col">
+      <h4>Connect with Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom: Policies -->
+  <div class="footer-bottom">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Disclaimer</a>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</body>
+
+</html>

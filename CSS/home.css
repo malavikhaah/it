@@ -1,0 +1,555 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f5f7fa;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background:#06299c;
+  color:#fff;
+  padding:1rem 0;
+}
+
+.container {
+  width:100%;
+  padding:0 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo and title */
+.brand {
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.logo {
+  width:50px;
+  height:50px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.brand h1 {
+  font-size:1.2rem;
+  margin:0;
+}
+
+/* Actions group */
+.actions {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-right:40px; /* 👈 moves Search + Student Life a little left */
+}
+
+
+/* Search button (icon only) */
+.search-btn {
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+.search-btn:hover {
+  color:#5b8cff;
+}
+
+/* Student life button */
+.student-btn {
+  background:#5b8cff;
+  color:#fff;
+  padding:0.6rem 1rem;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+.student-btn:hover {
+  background:#4a72d8;
+}
+
+/* Main navigation */
+.main-nav {
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+
+.main-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap: 6px;rem;   /* 👈 increase spacing between items */
+}
+
+.main-nav a {
+  display:block;
+  padding:1rem 0; /* keeps vertical padding only */
+  color:#01218a;
+  font-weight:600;
+  text-decoration:none;
+}
+
+
+.main-nav a:hover {
+  color:#1294ff;       /* lighter blue on hover */
+}
+/* Main navigation */
+.main-nav {
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+
+.main-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+}
+
+.main-nav a {
+  display:block;
+  padding:1rem;
+  color:#01218a;       /* blue text */
+  font-weight:600;
+  text-decoration:none;
+}
+
+.main-nav a:hover {
+  color:#1294ff;       /* lighter blue on hover */
+}
+
+/* Hero Section - Split */
+.hero {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-left {
+  position: relative;
+  flex: 2;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Blue gradient overlay only on the left edge */
+.hero-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;   /* 👈 gradient covers only left part */
+  height: 100%;
+  background: linear-gradient(to right, rgba(1,33,138,0.8) 0%, rgba(18,148,255,0.3) 80%, transparent 100%);
+  z-index: 1;
+}
+
+/* Welcome text */
+.welcome-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 2; /* above gradient */
+}
+.welcome-text h2 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+.welcome-text p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Right side blue box */
+.hero-right {
+  flex: 1;
+  background: #0f26ce;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.hero-right h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+.hero-right p {
+  margin: 0 0 20px;
+}
+.btn-register {
+  background: #fff;
+  color: #1294ff;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.btn-register:hover {
+  background: #e5e5e5;
+}
+
+
+/* Blue Rectangle Box Section */
+.blue-box {
+  background: #0d2d95;      /* blue background */
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.blue-box h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+/* Search bar inside blue box */
+.search-area {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-area input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 30px 0 0 30px;
+}
+
+.search-area button {
+  background: none;
+  border: none;
+  color: #1294ff;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.search-area button:hover {
+  color: #0a6ecf;
+}
+.explore {
+  background: #f5f7fa;
+  padding: 3rem 1rem;
+}
+
+.explore .container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.explore-heading {
+  font-size: 1.8rem;
+  color: #01218a;
+  margin-bottom: 1rem;
+}
+
+.explore-subheading {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+/* Outcomes Section (PSO + PEO together) */
+.outcomes {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+}
+
+.outcomes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Common layout */
+.pso-container, .peo-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Icon on left */
+.pso-image img, .peo-image img {
+  width: 100px;
+  height: auto;
+}
+
+/* Content box takes full width */
+.pso-content, .peo-content {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  flex: 1;                 /* 👈 expand to full available width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Hover zoom effect */
+.pso-content:hover, .peo-content:hover {
+  transform: scale(1.02);   /* slightly smaller zoom for large width */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.pso-content h3, .peo-content h3 {
+  color: #01218a;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.pso-content ul, .peo-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pso-content li, .peo-content li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+/* Labs Section */
+.labs {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.labs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #01218a;
+  border-left: 4px solid #01218a;
+  padding-left: 10px;
+}
+
+/* Lab card */
+.lab-card {
+  display: flex;
+  align-items: flex-start;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on the whole card */
+.lab-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Lab image */
+.lab-card img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom image on hover */
+.lab-card:hover img {
+  transform: scale(1.08);
+}
+
+.lab-info {
+  padding: 1rem;
+}
+
+.lab-info h3 {
+  color: #1a4ed8; /* blue title */
+  margin: 0 0 0.5rem;
+}
+
+.lab-info p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Classrooms section */
+.classrooms {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.classrooms h2 {
+  font-size: 2.5rem;
+  color: #1a2a7a;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Layout for image + info */
+.classroom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.classroom-content img {
+  width: 50%;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.classroom-info {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 400px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Student resources */
+.student-resources h3 {
+  font-size: 1.5rem;
+  color: #1a2a7a;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.resource-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.resource-card p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #1a4ed8;
+  border-radius: 20px;
+  color: #1a4ed8;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1a4ed8;
+  color: #fff;
+}
+
+.footer {
+  background: #0b1a78;   /* same dark blue */
+  color: #fff;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Main three-column layout */
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-col p {
+  margin: 0.3rem 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #0b1a78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #00e0d0;
+  color: #0b1a78;
+  transform: scale(1.1);
+}
+
+/* Bottom links */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-bottom a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
